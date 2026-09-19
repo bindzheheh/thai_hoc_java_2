@@ -1,0 +1,17 @@
+# --- Thu muc noi bo cua Eclipse (cache, config rieng may nay) ---
+.metadata/
+RemoteSystemsTempFiles/
+
+# --- File cau hinh project cua Eclipse ---
+.settings/
+.project
+.classpath
+
+# --- File .class da bien dich (sinh lai duoc, khong can luu) ---
+bin/
+target/
+*.class
+
+# --- File rac cua he dieu hanh ---
+Thumbs.db
+.DS_Store
