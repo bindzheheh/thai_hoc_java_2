@@ -3,7 +3,7 @@ package E_1_5;
 2611130213
 * day la class ve thong tin nha (vi tri,so phong ,...)
 */
-public class Locate_Houses {
+public class House {
 	/**
 	 * cau truc
 	 */
@@ -11,7 +11,7 @@ public class Locate_Houses {
 	int numberOfRooms;
 	double price;
 	Address address;
-	Locate_Houses(String kind,int numberOfRooms,double price,Address address){
+	House(String kind,int numberOfRooms,double price,Address address){
 		this.kind=kind;
 		this.numberOfRooms=numberOfRooms;
 		this.price=price;

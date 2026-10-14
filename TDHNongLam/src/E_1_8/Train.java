@@ -1,7 +1,7 @@
 package E_1_8;
 /**make by :nguyen van thai
 2611130213
-* day la class de luu thong tin chuyến tàu (train)
+* day la class de luu thong tin chuyen tau (train)
 */
 public class Train {
 	/**

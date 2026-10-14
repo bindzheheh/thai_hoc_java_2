@@ -6,12 +6,12 @@ package E_1_5;
  */
 import junit.framework.TestCase;
 
-public class Locate_HousesTest extends TestCase {
+public class HouseTest extends TestCase {
 	/**
 	 *data  cau truc 
 	 */
 	public void testConstructor() {
-		new Locate_Houses("Ranch", 7,375.000,new Address( "23 Maple Street", "Brookline"));
+		new House("Ranch", 7,375.000,new Address( "23 Maple Street", "Brookline"));
 		/**
 		 * kind:Ranch
 		 * numberOfRooms:7
@@ -20,8 +20,8 @@ public class Locate_HousesTest extends TestCase {
 		 * city name:Brookline
 		 */
 		Address address1=new Address("5 Joye Road","Newton");
-		new Locate_Houses("Colonial", 9,450.000,address1);
-		new Locate_Houses("Cape", 6, 236.000,new Address( "83 Winslow Road", "Waltham"));
+		new House("Colonial", 9,450.000,address1);
+		new House("Cape", 6, 236.000,new Address( "83 Winslow Road", "Waltham"));
 	}
 
 }
