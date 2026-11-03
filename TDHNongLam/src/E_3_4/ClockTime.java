@@ -20,8 +20,22 @@ public class ClockTime {
 	/**
 	 * method
 	 */
+	/**
+	 * 
+	 * @return
+	 */
 	public int conversion() {
 		return this.hour*60+this.minute;
 	}
-
+	/**
+	 * override
+	 */
+	public boolean equals(Object obj) {
+		if ((null == obj) || !(obj instanceof ClockTime))
+			return false;
+		else {ClockTime that = (ClockTime) obj;
+		return (this.hour==that.hour&&
+				this.minute==that.minute);
+		}
+	}
 }

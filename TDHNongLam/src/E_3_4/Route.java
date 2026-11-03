@@ -20,6 +20,11 @@ public class Route {
 	/**
 	 * method 
 	 */
+	/**
+	 * 
+	 * @param sDes
+	 * @return
+	 */
 	public boolean sameDestination(String sDes) {
 		return this.destination.equals(sDes);
 		
