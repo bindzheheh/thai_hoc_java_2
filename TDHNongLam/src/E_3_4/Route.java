@@ -21,9 +21,13 @@ public class Route {
 	 * method 
 	 */
 	/**
-	 * 
-	 * @param sDes
-	 * @return
+	 * checks whether the given station is the destination of this route
+	 * @param sDes the station name to compare (case-sensitive)
+	 * @return sameDestination--(boolean)
+	 * Example:
+	 * Route r1 = new Route("HaNoi", "HaiPhong");
+	 * r1.sameDestination("HaiPhong") => true
+	 * r1.sameDestination("Hue") => false
 	 */
 	public boolean sameDestination(String sDes) {
 		return this.destination.equals(sDes);
