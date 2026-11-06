@@ -14,6 +14,22 @@ public class ConsLog implements ILog {
 		this.first = first;
 		this.rest = rest;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if (obj == null || (obj instanceof ConsLog)) {
+			return false;
+		}
+		else {
+			ConsLog that = (ConsLog) obj;
+				return (this.first.equals(that.first)
+						&&this.rest.equals(that.rest));
+						
+			}
+		}
+	
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

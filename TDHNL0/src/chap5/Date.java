@@ -17,6 +17,21 @@ public class Date {
 		this.month = month;
 		this.year = year;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if (obj == null || (obj instanceof Date)) {
+			return false;
+		}
+		else {
+			Date that = (Date) obj;
+			return (this.Day==that.Day
+					&&this.month==that.month
+					&&this.year==that.year);
+		}
+	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

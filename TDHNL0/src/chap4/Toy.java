@@ -19,6 +19,14 @@ public class Toy {
 		// TODO Auto-generated method stub
 		return "Name: "+this.name+",Price :"+this.price+",Available :"+this.available;
 	}
-	
+	public boolean nameEqual(String nameOfToy) {
+		return this.name.equals(nameOfToy);
+	}
+	public boolean priceBelow(double priceOfToy) {
+		return this.price <= priceOfToy;
+	}
+	public Toy raise(double percent) {
+		return new Toy(this.name,this.price+this.price*percent/100,this.available);
+	}
 
 }

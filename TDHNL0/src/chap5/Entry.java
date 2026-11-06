@@ -20,6 +20,22 @@ public class Entry {
 		this.commen = commen;
 		this.duration = duration;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if (obj == null || (obj instanceof Entry)) {
+			return false;
+		}
+		else {
+			Entry that = (Entry)obj;
+			return (this.date.equals(that.date)
+					&&this.distance==that.distance
+					&&this.commen.equals(that.commen)
+					&&this.duration==that.duration);
+		}
+	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
