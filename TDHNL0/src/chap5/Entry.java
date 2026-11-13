@@ -8,6 +8,9 @@ public class Entry {
 	private double distance;
 	private String commen;
 	private int  duration;
+	
+	
+	
 	/**
 	 * @param date
 	 * @param distance
@@ -24,7 +27,7 @@ public class Entry {
 	@Override
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
-		if (obj == null || (obj instanceof Entry)) {
+		if (obj == null || !(obj instanceof Entry)) {
 			return false;
 		}
 		else {
@@ -42,7 +45,38 @@ public class Entry {
 		return "Ngay :"+this.date.toString()+", Khoang cach :"+this.distance + ",ghi chu :"+this.commen.toString()+",Duration :"+this.duration;
 	}
 	
+	public double getdistance() {
+		return this.distance;
+	}
+	public boolean isEvenDay() {
+		return this.date.isEvenDay();
+		
+	}
+	public boolean isMonth(int month,int year) {
+		return this.date.isMonth(month,year);
+	}
+
+	public String getComment(int month,int year) {
+		// TODO Auto-generated method stub
+		if (this.date.isMonth(month, year))
+			return this.commen;
+		else {
+			return "none";
+		}
+	}
+	public boolean rightDuration(int numOfTime) {
+		if (this.duration>=numOfTime) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
 	
+	
+	
+		
 	
 
 }

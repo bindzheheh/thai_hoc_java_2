@@ -7,14 +7,9 @@ public class MTLog implements ILog {
 	
 
 	@Override
+	// MTLog: mọi MTLog đều bằng nhau
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		if (obj == null || (obj instanceof MTLog)) {
-			return false;
-		}
-		else {
-			return false;
-		}
+		return obj instanceof MTLog;
 	}
 
 
@@ -23,6 +18,57 @@ public class MTLog implements ILog {
 		// TODO Auto-generated method stub
 		return "None";
 	}
+
+
+	@Override
+	public double totalDistance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public double totalEvenDayDistance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public double totalDistanceInMonth(int month,int year) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public ILog LogHistory(int month, int year) {
+		// TODO Auto-generated method stub
+		return new MTLog();
+	}
+
+
+	@Override
+	public String LogHistoryComment(int month, int year) {
+		// TODO Auto-generated method stub
+		return "";
+	}
+
+
+	@Override
+	public ILog isDuration(int numOfTime) {
+		// TODO Auto-generated method stub
+		return new MTLog();
+	}
+
+
+	
+
+
+	
+
+
+	
 	
 
 }

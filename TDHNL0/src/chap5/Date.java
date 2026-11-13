@@ -21,7 +21,7 @@ public class Date {
 	@Override
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
-		if (obj == null || (obj instanceof Date)) {
+		if (obj == null || !(obj instanceof Date)) {
 			return false;
 		}
 		else {
@@ -37,7 +37,15 @@ public class Date {
 		// TODO Auto-generated method stub
 		return this.Day +"/"+this.month +"/" +this.year;
 	}
-	
+	public boolean isEvenDay() {
+		if (this.Day%2==0)
+			return true;
+		return false;
+		
+	}
+	public boolean isMonth(int month,int year) {
+		return this.month==month && this.year==year;
+	}
 	
 
 }
