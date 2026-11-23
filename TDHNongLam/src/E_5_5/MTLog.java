@@ -16,7 +16,13 @@ public class MTLog implements ILog {
 	 */
 	@Override
 	public boolean equals(Object obj) {
-		return obj instanceof MTLog;
+		if(obj == null || !(obj instanceof MTLog)) {
+			return false;
+		
+		}
+		else {
+			return true;
+		}
 	}
 	/**
 	 * Convert this empty log to a String
